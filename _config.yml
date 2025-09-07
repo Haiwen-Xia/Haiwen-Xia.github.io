@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "JingXu's site"
+title                    : "HaiwenXia's Site"
 title_separator          : "-"
-name                     : &name "徐靖 Jing Xu "
-description              : &description "Turing class of PKU 22, research interest is machine learning, hobby is Chinese philosophy"
-url                      : https://iculizhi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "夏海闻 Haiwen Xia"
+description              : &description "Zhi class of PKU 23, research interest is machine learning, hobby is music."
+url                      : https://haiwen-xia.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ICUlizhi/ICUlizhi.github.io"
+repository               : "Haiwen-Xia/Haiwen-Xia.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jing Xu(徐靖)"
-  avatar           : "xj.png"
+  name             : "Haiwen Xia(夏海闻)"
+  avatar           : "Haiwen.JPG"
   bio              : "Peking University"
   location         : "China Beijing"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            : "xujing2022@stu.pku.edu.cn"
+  googlescholar    :  https://scholar.google.com/citations?user=3AdGPngAAAAJ
+  email            : "xiahaiwenm@stu.pku.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "ICUlizhi"
+  github           : "Haiwen-Xia"
   google_plus      :
   keybase          :
   instagram        :
@@ -115,7 +115,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  wechat           : iculizhi_github_io
+  wechat           : _13381063109
 
 
 # Reading Files
