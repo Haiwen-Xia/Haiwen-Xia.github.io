@@ -22,7 +22,7 @@ main:
   #   url: /Notes/
 
   - title : "Compositions"
-    url: /compose/
+    url: /Compositions/
   
   - title: "Repositories"
     url: /Repositories/
