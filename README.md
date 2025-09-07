@@ -75,7 +75,7 @@ bundle exec jekyll liveserve
 看教程
 ### 如何在导航栏中增加 repositories
 
-#### 1. config.yml 
+#### 1. _config.yml 
 
 Collections模块
 ```
