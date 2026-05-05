@@ -97,25 +97,11 @@ author_profile: true
 
 ## Featured Publication
 
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div class='paper-box-image-inner'>
-      <div class='paper-badge'>ICML 2026</div>
-      <img src="{{ '/images/publications/CMI-RewardBench.png' | relative_url }}" alt="CMI-RewardBench">
-    </div>
-  </div>
-  <div class='paper-box-text'>
-    <h3><a href="https://arxiv.org/abs/2603.00610">CMI-RewardBench: Evaluating Music Reward Models with Compositional Multimodal Instruction</a></h3>
-    <p>Yinghao Ma*, Haiwen Xia*, Hewei Gao, Weixiong Chen, Yuxin Ye, Yuchen Yang, Sungkyun Chang, Mingshuo Ding, Yizhi Li, Ruibin Yuan, Simon Dixon, Emmanouil Benetos</p>
-    <p class="paper-links"><a href="https://arxiv.org/abs/2603.00610">Paper</a><a href="{{ '/publication/cmi-rewardbench' | relative_url }}">Details</a></p>
-    <ul>
-      <li>Introduced a new task for evaluating generated audio from compositional music instructions.</li>
-      <li>Created the CMI-Pref dataset using 23 music generation models, with 110k LLM-labeled preferences, 797 hours of generated audio, and a human-labeled subset containing 4027 preference labels.</li>
-      <li>Built CMI-RewardBench to evaluate preference learning methods on compositional multimodal music instructions.</li>
-      <li>Trained a parameter-efficient reward model that reaches near-SOTA correlation with human labels across multiple evaluation protocols and supports inference-time scaling for music generation models.</li>
-    </ul>
-  </div>
-</div>
+{% for post in site.publications reversed %}
+  {% if post.featured %}
+    {% include featured-publication.html post=post %}
+  {% endif %}
+{% endfor %}
 
 You can also find my articles on [My Google Scholar profile](https://scholar.google.com/citations?user=3AdGPngAAAAJ).
 

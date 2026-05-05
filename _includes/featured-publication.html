@@ -1,0 +1,30 @@
+{% include base_path %}
+{% assign featured_post = include.post %}
+{% assign paper_link = featured_post.paperurl | default: featured_post.url %}
+
+<div class='paper-box'>
+  {% if featured_post.image %}
+  <div class='paper-box-image'>
+    <div class='paper-box-image-inner'>
+      <div class='paper-badge'>{{ featured_post.badge | default: featured_post.venue }}</div>
+      <img src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title | escape }}">
+    </div>
+  </div>
+  {% endif %}
+  <div class='paper-box-text'>
+    <h3><a href="{{ paper_link }}">{{ featured_post.title }}</a></h3>
+    {% if featured_post.authors %}
+    <p>{{ featured_post.authors }}</p>
+    {% endif %}
+    <p class="paper-links">
+      {% if featured_post.paperurl %}<a href="{{ featured_post.paperurl }}">Paper</a>{% endif %}<a href="{{ base_path }}{{ featured_post.url }}">Details</a>
+    </p>
+    {% if featured_post.highlights %}
+    <ul>
+      {% for highlight in featured_post.highlights %}
+      <li>{{ highlight }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
