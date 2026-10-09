@@ -17,7 +17,7 @@
     <p>{{ featured_post.authors }}</p>
     {% endif %}
     <p class="paper-links">
-      {% if featured_post.paperurl %}<a href="{{ featured_post.paperurl }}">Paper</a>{% endif %}<a href="{{ base_path }}{{ featured_post.url }}">Details</a>
+      {% if featured_post.paperurl %}<a href="{{ featured_post.paperurl }}">Paper</a>{% endif %}{% if featured_post.codeurl %}<a href="{{ featured_post.codeurl }}">Code</a>{% endif %}<a href="{{ base_path }}{{ featured_post.url }}">Details</a>
     </p>
     {% if featured_post.highlights %}
     <ul>

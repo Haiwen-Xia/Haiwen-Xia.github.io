@@ -6,6 +6,7 @@ excerpt: "Online-generated training data for automatic music transcription, stud
 date: 2026-10-08
 venue: "arXiv preprint"
 paperurl: "https://arxiv.org/abs/2610.11197"
+codeurl: "https://github.com/Haiwen-Xia/randomscore-amt"
 featured: true
 badge: "arXiv 2026"
 authors: "Haiwen Xia, Chao Zhang, Qiuqiang Kong"
